@@ -9,7 +9,8 @@
                     <a href="${pageContext.request.contextPath}/show?id=${task.id}">
                         <c:out value="${task.id}" />
                     </a>
-                    ：<c:out value="${task.content}" />
+                    ：<c:out value="${task.content}" /><br />
+                    更新日時：<c:out value ="${task.updated_at}" />
                 </li>
             </c:forEach>
         </ul>
