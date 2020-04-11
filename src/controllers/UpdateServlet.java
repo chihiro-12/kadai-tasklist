@@ -40,8 +40,7 @@ public class UpdateServlet extends HttpServlet {
         if(_token != null && _token.equals(request.getSession().getId())) {
             EntityManager em = DBUtil.createEntityManager();
 
-            // セッションスコープからメッセージのIDを取得して
-            // 該当のIDのメッセージ1件のみをデータベースから取得
+            // 該当のID1件のみをデータベースから取得
             Task m = em.find(Task.class, (Integer)(request.getSession().getAttribute("task_id")));
 
             // フォームの内容を各プロパティに上書き
@@ -51,7 +50,7 @@ public class UpdateServlet extends HttpServlet {
             Timestamp currentTime = new Timestamp(System.currentTimeMillis());
             m.setUpdated_at(currentTime);       // 更新日時のみ上書き
 
-         // バリデーションを実行してエラーがあったら編集画面のフォームに戻る
+            // バリデーションを実行してエラーがあったら編集画面のフォームに戻る
             List<String> errors = MessageValidator.validate(m);
             if(errors.size() > 0) {
                 em.close();

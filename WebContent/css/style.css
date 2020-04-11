@@ -73,12 +73,32 @@ button {
     text-align: center;
 }
 
+#flush_success {
+    width: 100%;
+    padding-top: 28px;
+    padding-left: 2%;
+    padding-bottom: 28px;
+    margin-bottom: 15px;
+    color: #006400;
+    background-color: #7fff7f;
+}
+
+#sakuzyo_success {
+    width: 100%;
+    padding-top: 28px;
+    padding-left: 2%;
+    padding-bottom: 28px;
+    margin-bottom: 15px;
+    color: #ff4500;
+    background-color: #ffbf7f;
+}
+
 #flush_error {
     width: 100%;
     padding-top: 28px;
     padding-left: 2%;
     padding-bottom: 28px;
     margin-bottom: 15px;
-    color: #721c24;
-    background-color: #f8d7da;
+    color: #ff0000;
+    background-color: #ff8989;
 }
