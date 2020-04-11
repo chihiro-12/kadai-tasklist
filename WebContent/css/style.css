@@ -3,6 +3,7 @@
 body {
     color: #333333;
     font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
+    padding-left: 5%;
 }
 
 #header {
@@ -81,16 +82,6 @@ button {
     margin-bottom: 15px;
     color: #006400;
     background-color: #7fff7f;
-}
-
-#sakuzyo_success {
-    width: 100%;
-    padding-top: 28px;
-    padding-left: 2%;
-    padding-bottom: 28px;
-    margin-bottom: 15px;
-    color: #ff4500;
-    background-color: #ffbf7f;
 }
 
 #flush_error {
